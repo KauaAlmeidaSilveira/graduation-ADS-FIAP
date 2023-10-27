@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script js</title>
+
+    <link rel="stylesheet" href="css\style.css">
+    <script src="js\script.js"></script>
+</head>
+<body>
+    
+    <form class="form" method="post">
+
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+        <span id="erroNome"></span>
+        <br>
+
+        <label for="senha">Senha:</label>
+        <input type="password" name="senha" id="senha">
+        <br>
+
+        <input type="submit" value="Login" onclick="return validar()">
+    </form>
+
+</body>
+</html>
