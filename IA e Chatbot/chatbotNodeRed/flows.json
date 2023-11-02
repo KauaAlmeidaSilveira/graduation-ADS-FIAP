@@ -389,21 +389,79 @@
         "wires": []
     },
     {
-        "id": "bb57e603cb094948",
-        "type": "microphone",
+        "id": "0c30d3a40076a7a5",
+        "type": "debug",
         "z": "388523e025dd790a",
-        "name": "MIC",
-        "x": 70,
-        "y": 120,
+        "name": "SAIDA STT",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "f7d42eb31d77e280",
+        "type": "debug",
+        "z": "388523e025dd790a",
+        "name": "Entrada STT",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 230,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "d8a63f96ca383382",
+        "type": "function",
+        "z": "388523e025dd790a",
+        "name": "Proc Entrada",
+        "func": "msg.payload = msg.payload.weblink;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 160,
         "wires": [
             [
-                "26ef2a9f6a717bce",
-                "edc39400916e9f3a"
+                "6b3c494844c60101"
             ]
         ]
     },
     {
-        "id": "0eacc1288cd4de86",
+        "id": "b4977c94a054b281",
+        "type": "telegram receiver",
+        "z": "388523e025dd790a",
+        "name": "",
+        "bot": "06b36dce53b0b4df",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "x": 90,
+        "y": 160,
+        "wires": [
+            [
+                "f7d42eb31d77e280",
+                "d8a63f96ca383382"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "6b3c494844c60101",
         "type": "watson-speech-to-text",
         "z": "388523e025dd790a",
         "name": "WA STT",
@@ -429,65 +487,26 @@
         "discard-listening": false,
         "disable-precheck": false,
         "service-endpoint": "https://api.au-syd.speech-to-text.watson.cloud.ibm.com/instances/fe4e742e-d843-419a-a26a-1c6219811dbe",
-        "x": 400,
-        "y": 120,
+        "x": 520,
+        "y": 160,
         "wires": [
             [
-                "c6de20b35d2952d6"
+                "0c30d3a40076a7a5"
             ]
         ]
     },
     {
-        "id": "c6de20b35d2952d6",
-        "type": "debug",
+        "id": "3319a52268a9c080",
+        "type": "telegram sender",
         "z": "388523e025dd790a",
-        "name": "SAIDA STT",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 470,
-        "y": 40,
-        "wires": []
-    },
-    {
-        "id": "26ef2a9f6a717bce",
-        "type": "debug",
-        "z": "388523e025dd790a",
-        "name": "debug 1",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 180,
-        "y": 40,
-        "wires": []
-    },
-    {
-        "id": "edc39400916e9f3a",
-        "type": "function",
-        "z": "388523e025dd790a",
-        "name": "Proc Entrada",
-        "func": "msg.payload = msg.payload.weblink\nreturn msg;",
+        "name": "",
+        "bot": "",
+        "haserroroutput": false,
         "outputs": 1,
-        "timeout": 0,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 230,
-        "y": 120,
+        "x": 830,
+        "y": 160,
         "wires": [
-            [
-                "0eacc1288cd4de86"
-            ]
+            []
         ]
     }
 ]
