@@ -1,0 +1,16 @@
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#login{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 250px;
+}
+
+#btnLogin{
+    width: 75px;
+}
