@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CEF48AAA-FC6D-D53F-7F57-5EA967A00B70" containerWithKeyObject="FF590C62-A4DF-F01F-AE86-96DD8E4EA32F" localFKIndex="CDC4E94E-93D0-59AA-635D-C56225544EC5" name="Voo_Companhia_Aerea_FK">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:48:25 UTC</createdTime>
+<generatorID>7F80EA29-E5B2-E2EB-08CB-66F2034EE08C</generatorID>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<referredTableLongName>Companhia_Aerea</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>91DDA24E-5F14-6CE5-4BD5-110B83609318</referredTableID>
+<keyObject>871CAD16-80D0-304E-8615-4170E5F85E12</keyObject>
+<referredKeyID>871CAD16-80D0-304E-8615-4170E5F85E12</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_companhia</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="FD59322F-3FDC-82CD-60BA-FBEC43FC7EFE">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:18:18 UTC</createdTime>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

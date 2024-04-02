@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5DD8C4D1-8BC9-BE1C-2B1C-E50E8480B89B" name="Passageiro">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:30:32 UTC</createdTime>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<engineerTo>
+<item key="66FDB534-51C5-946F-979E-FABE7C746136" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_passageiro" id="54804627-55E7-906D-6014-34FC6D3DB41E">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:31:33 UTC</createdTime>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<engineerTo>
+<item key="66FDB534-51C5-946F-979E-FABE7C746136" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nome" id="2E591193-C02A-AD34-96F1-C99902AC9B50">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:32:19 UTC</createdTime>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<engineerTo>
+<item key="66FDB534-51C5-946F-979E-FABE7C746136" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="email" id="A68E5C09-8BA1-E80B-0255-8C452847B622">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:32:43 UTC</createdTime>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<engineerTo>
+<item key="66FDB534-51C5-946F-979E-FABE7C746136" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nmr_telefone" id="B9BAF405-D74A-7220-52E0-C588C3C2B644">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:33:02 UTC</createdTime>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<engineerTo>
+<item key="66FDB534-51C5-946F-979E-FABE7C746136" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>11 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="CD8D941A-5FA4-BABD-DCF0-1A4093C02FC3" name="Passageiro PK">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:32:18 UTC</createdTime>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="66FDB534-51C5-946F-979E-FABE7C746136" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>54804627-55E7-906D-6014-34FC6D3DB41E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

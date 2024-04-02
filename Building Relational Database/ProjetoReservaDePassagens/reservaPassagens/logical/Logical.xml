@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="2EA5868E-BEB4-92CE-963A-50C9AB97F7F3" mainViewID="A83965D8-50EF-B83B-1FE7-A7C79796FFBE">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:18:18 UTC</createdTime>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

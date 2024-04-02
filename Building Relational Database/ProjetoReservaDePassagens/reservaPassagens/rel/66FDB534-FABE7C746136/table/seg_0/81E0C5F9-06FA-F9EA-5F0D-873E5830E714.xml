@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="81E0C5F9-06FA-F9EA-5F0D-873E5830E714" name="Reserva">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:48:25 UTC</createdTime>
+<generatorID>7A4DCBB7-E4E2-93AD-1A4A-9F3AA9AB9869</generatorID>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_reserva" id="8EFE2688-1341-4E4C-733F-421485F4EE36">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:48:25 UTC</createdTime>
+<generatorID>824AF61B-FB0F-5342-7AD2-C2B8AA15C105</generatorID>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="info_voo" id="B9377F01-632C-32B4-ADC4-736B6F86033F">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:48:25 UTC</createdTime>
+<generatorID>A2325E61-92C6-577D-01F3-6AE63C1C03A0</generatorID>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nmr_assento" id="53C1DAAF-8F19-A1E0-2944-E3D6048EF9EC">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:48:25 UTC</createdTime>
+<generatorID>A376A7F9-C87D-111C-2C7D-3B4B57B578C0</generatorID>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="822B3C36-B2C4-B927-4AE1-053531ED3169">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:48:25 UTC</createdTime>
+<generatorID>FBA16E41-6374-601A-686E-3F6451624F34</generatorID>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_passageiro" id="1A11F54F-AA30-83F5-9EC4-DFDCBAB9FD74">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:48:25 UTC</createdTime>
+<generatorID>BE780D81-AC61-FAD6-A190-1384C9DEE07B</generatorID>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="004F8734-FBA0-92AA-4AB7-B2C25B51A89C" referredColumn="F817E264-9587-CCAD-BD29-91A37AA12D63"/>
+</associations>
+</Column>
+<Column name="id_voo" id="A8D89B03-5A2E-9D24-76AA-AC684100E2E4">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:58:00 UTC</createdTime>
+<generatorID>83CE1955-739F-818E-792B-D5E30E32903A</generatorID>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7EBE48F8-2690-B414-1C82-552FE2C0984C" referredColumn="367C9F68-2CBA-CD60-5A1A-A15FD15D26AB"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="85F7AD74-6930-9B17-E3B4-CF033E28DDE4" name="Reserva_PK">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:48:25 UTC</createdTime>
+<generatorID>D895E370-DFC3-D7D5-708B-4AF2A4169C90</generatorID>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8EFE2688-1341-4E4C-733F-421485F4EE36"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EFDF8AA7-39AC-1A61-C4B1-7432853117A7" name="Reserva_Passageiro_FK">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:48:25 UTC</createdTime>
+<generatorID>B4F80EE0-1FA4-7F7A-67BB-DD1427F692D6</generatorID>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1A11F54F-AA30-83F5-9EC4-DFDCBAB9FD74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4382EA77-FC90-492F-D713-ADE993E32459" name="Reserva_Voo_FK">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:58:00 UTC</createdTime>
+<generatorID>7200A974-306D-55F5-C64B-360E94FE0536</generatorID>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A8D89B03-5A2E-9D24-76AA-AC684100E2E4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

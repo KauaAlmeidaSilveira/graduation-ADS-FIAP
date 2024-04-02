@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="91DDA24E-5F14-6CE5-4BD5-110B83609318" name="Companhia_Aerea">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:48:25 UTC</createdTime>
+<generatorID>A35F2626-4A72-39C7-0B90-654C8C3923AA</generatorID>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_companhia" id="084C7497-3DFD-7120-DC63-4F860AF89BE3">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:48:25 UTC</createdTime>
+<generatorID>D8F8336B-4FF6-30B0-9687-66EAAFA90497</generatorID>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome" id="BE1FE861-A9CA-EEFF-7952-D0A368435032">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:48:25 UTC</createdTime>
+<generatorID>69574204-93D9-F9CA-9631-D6031E697A90</generatorID>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 CHAR</dataTypeSize>
+<ownDataTypeParameters>100 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pais_origem" id="9205F6F0-7646-BD5D-330E-E347C14C4BB1">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:48:25 UTC</createdTime>
+<generatorID>5EFA9FEB-9266-F03E-628B-106116EFEEE7</generatorID>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="info_contato" id="9F280339-73DD-8FE1-C58C-0AFC8493C18C">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:48:25 UTC</createdTime>
+<generatorID>D52986B6-981B-1152-637E-364E8144C739</generatorID>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150 CHAR</dataTypeSize>
+<ownDataTypeParameters>150 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="871CAD16-80D0-304E-8615-4170E5F85E12" name="Companhia_Aerea_PK">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:48:25 UTC</createdTime>
+<generatorID>DA1058D6-3D3F-DEF2-2EF9-9DF6ED08C2D7</generatorID>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="084C7497-3DFD-7120-DC63-4F860AF89BE3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

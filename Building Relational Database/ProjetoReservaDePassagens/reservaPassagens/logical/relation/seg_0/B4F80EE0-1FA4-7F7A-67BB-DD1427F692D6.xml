@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Relation_8" directorySegmentName="seg_0" id="B4F80EE0-1FA4-7F7A-67BB-DD1427F692D6">
+<createdBy>Kaua</createdBy>
+<createdTime>2024-04-02 22:44:58 UTC</createdTime>
+<ownerDesignName>reservaPassagens</ownerDesignName>
+<engineerTo>
+<item key="66FDB534-51C5-946F-979E-FABE7C746136" value="true"/>
+</engineerTo>
+<sourcePk>CD8D941A-5FA4-BABD-DCF0-1A4093C02FC3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5DD8C4D1-8BC9-BE1C-2B1C-E50E8480B89B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7A4DCBB7-E4E2-93AD-1A4A-9F3AA9AB9869</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
