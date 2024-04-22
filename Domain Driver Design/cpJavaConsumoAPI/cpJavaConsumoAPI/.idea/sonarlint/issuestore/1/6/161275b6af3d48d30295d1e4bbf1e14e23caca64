@@ -1,0 +1,10 @@
+
+”	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¥ÅäÆşÿÿÿÿ8¦ëÉï1J$e37eba51-7efb-4b66-a1fe-cc1d4ceb27b5
+r	java:S106"+Replace this use of System.out by a logger.(Ó¯‹ôùÿÿÿÿ8¤ñ¨Éï1J$82320bf5-5a87-4ab3-93f5-b2adb7835bda
+¦
+java:S1157"cReplace these toUpperCase()/toLowerCase() and equals() calls with a single equalsIgnoreCase() call.(Ä€‰8º•°Éï1J$9875185f-458e-4459-aeac-5dbe27a750a1
+r	java:S106"+Replace this use of System.out by a logger.(ÅŠ¤Ùøÿÿÿÿ8»•°Éï1J$bc29c00c-a609-4734-b496-7fe48a65562e
+l	java:S106""+Replace this use of System.out by a logger.(ãÕÅ8»•°Éï1J$04299867-13ba-4419-9263-90296f6d0e12
+m	java:S106%"+Replace this use of System.out by a logger.( òÎ8»•°Éï1J$90402e07-0009-4bf7-8800-5c7e088a79dd
+r	java:S106)"+Replace this use of System.out by a logger.(ŞÒ—üÿÿÿÿ8ôÒ²Éï1J$ee839d7c-65e0-4077-83bb-3871404aa8db
+r	java:S106+"+Replace this use of System.out by a logger.(İ¥ıÿÿÿÿ8§·Éï1J$eec9de26-2e5c-4939-a483-60bac35f1353
