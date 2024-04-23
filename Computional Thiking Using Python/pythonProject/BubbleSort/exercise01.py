@@ -1,4 +1,10 @@
-list_func = []
+list_func = [
+    {'cod': 1, 'nome': 'kaua', 'idade': 12, 'slr': 56453.0},
+
+    {'cod': 3, 'nome': 'kawa', 'idade': 123, 'slr': 45234.0},
+
+    {'cod': 2, 'nome': 'kawan', 'idade': 21, 'slr': 6543.0}
+]
 
 
 def main():
@@ -8,8 +14,10 @@ def main():
                          "02 - Listar\n"
                          "03 - Listar ordenado pelo nome\n"
                          "04 - Atualizar\n"
-                         "05 - Remover\n\n"
-                         "06 - SAIR\n\n"
+                         "05 - Remover\n"
+                         "06 - Buscar index pelo nome\n\n"
+
+                         "07 - SAIR\n\n"
                          "Digite a opção que deseja: "))
 
         match resp:
@@ -24,6 +32,9 @@ def main():
             case 5:
                 remover()
             case 6:
+                nome = input("Digite o nome: ")
+                print(f"Posição: {buscaBinaria(list_func, nome)}")
+            case 7:
                 break
             case _:
                 print('Não entendi !!')
@@ -99,17 +110,27 @@ def remover():
 
 
 def bubble_sort(list):
-
-    copyList = []
-    for i in list:
-        copyList.append(i)
-
-    n = len(copyList)
+    n = len(list)
     for j in range(n - 1):
         for i in range(n - 1):
-            if copyList[i]["nome"] > copyList[i + 1]["nome"]:
-                copyList[i], copyList[i + 1] = copyList[i + 1], copyList[i]
-    return copyList
+            if list[i]["nome"] > list[i + 1]["nome"]:
+                list[i], list[i + 1] = list[i + 1], list[i]
+    return list
+
+
+def buscaBinaria(array, item, ini=0, fim=None):
+    if fim is None:
+        fim = len(array) - 1
+
+    if ini <= fim:
+        m = (ini + fim) // 2
+        if array[m]["nome"] == item:
+            return m
+        if item < array[m]["nome"]:
+            return buscaBinaria(array, item, ini, m - 1)
+        else:
+            return buscaBinaria(array, item, m + 1, fim)
+    return None
 
 
 if __name__ == '__main__':
