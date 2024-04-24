@@ -11,30 +11,58 @@ def main():
     while True:
 
         resp = int(input("01 - Adicionar\n"
-                         "02 - Listar\n"
-                         "03 - Listar ordenado pelo nome\n"
-                         "04 - Atualizar\n"
-                         "05 - Remover\n"
-                         "06 - Buscar index pelo nome\n\n"
+                         "02 - Adicionar lendo lista\n"
+                         "03 - Listar\n"
+                         "04 - Listar ordenado pelo nome\n"
+                         "05 - Atualizar\n"
+                         "06 - Remover\n"
+                         "07 - Buscar index pelo nome\n"
+                         "08 - Exportar funcs\n\n"
 
-                         "07 - SAIR\n\n"
+                         "09 - SAIR\n\n"
                          "Digite a opção que deseja: "))
 
         match resp:
             case 1:
                 adicionar()
             case 2:
+                nome_arq = input("Digite um nome para o arquivo texto (com extensão): ")
+                with open(nome_arq, "r") as arq:
+                    r_list_func = arq.readlines()
+
+                for func in r_list_func:
+                    item = func.split(";")
+                    list_func.append(
+                        {
+                            "cod": item[0],
+                            "nome": item[1],
+                            "idade": item[2],
+                            "slr": item[3]
+                        }
+                    )
+
+                print("Adicionados !!")
+
                 listar(list_func)
+
             case 3:
-                listar(bubble_sort(list_func))
+                listar(list_func)
             case 4:
-                atualizar()
+                listar(bubble_sort(list_func))
             case 5:
-                remover()
+                atualizar()
             case 6:
+                remover()
+            case 7:
                 nome = input("Digite o nome: ")
                 print(f"Posição: {buscaBinaria(list_func, nome)}")
-            case 7:
+            case 8:
+                nome_arq = input("Digite um nome para o arquivo texto (com extensão): ")
+                for i in list_func:
+                    linha = str(i["cod"])+";"+i["nome"]+";"+str(i["idade"])+";"+str(i["slr"])+"\n"
+                    with open(nome_arq, "a") as arq:
+                        arq.write(linha)
+            case 9:
                 break
             case _:
                 print('Não entendi !!')

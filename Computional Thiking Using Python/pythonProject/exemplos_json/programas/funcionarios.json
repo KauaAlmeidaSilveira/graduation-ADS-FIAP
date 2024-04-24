@@ -1,0 +1,14 @@
+[
+	{
+		"Codigo": 1,
+		"Nome": "Jos",
+		"Idade": 33,
+		"Salario": 5600.0
+	},
+	{
+		"Codigo": 2,
+		"Nome": "Maria",
+		"Idade": 36,
+		"Salario": 7800.0
+	}
+]

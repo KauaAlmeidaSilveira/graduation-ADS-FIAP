@@ -1,0 +1,38 @@
+[
+	{
+		"cod": 15,
+		"nome": "diego",
+		"idade": 12,
+		"slr": 56453.0
+	},
+	{
+		"cod": 45,
+		"nome": "abel",
+		"idade": 123,
+		"slr": 45234.0
+	},
+	{
+		"cod": 23,
+		"nome": "huan",
+		"idade": 21,
+		"slr": 6543.0
+	},
+	{
+		"cod": 1,
+		"nome": "kaua",
+		"idade": 12,
+		"slr": 56453.0
+	},
+	{
+		"cod": 3,
+		"nome": "kawa",
+		"idade": 123,
+		"slr": 45234.0
+	},
+	{
+		"cod": 2,
+		"nome": "kawan",
+		"idade": 21,
+		"slr": 6543.0
+	}
+]
