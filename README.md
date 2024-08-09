@@ -1,9 +1,11 @@
-Este repositório foi criado para armazenar todas as atividades e projetos relacionados ao curso de Análise e Desenvolvimento de Sistemas na FIAP.
+# Análise e Desenvolvimento de Sistemas - FIAP
 
-## Estrutura do Repositório
+Este repositório foi criado para organizar e compartilhar os conteúdos das disciplinas que estou cursando. Ele está dividido em duas pastas principais: **Primeiro Semestre** e **Segundo Semestre**. Dentro de cada uma dessas pastas, você encontrará subpastas correspondentes a cada disciplina.
 
-O repositório está organizado da seguinte forma:
+## Objetivo
 
-- **Atividades**: Este diretório contém subdiretórios para cada disciplina e dentro de cada um deles estão as atividades relacionadas a essa disciplina.
+O objetivo deste repositório é facilitar o acesso e a organização dos materiais de estudo, como anotações, exercícios, projetos e outros recursos relevantes para cada disciplina.
 
-- **Projetos**: Aqui, você encontrará pastas separadas para cada projeto de curso. Cada pasta deve conter todos os arquivos relevantes, documentação e código-fonte relacionados ao projeto.
+## Contato
+
+Se você tiver alguma dúvida ou sugestão, pode me contatar através do meu e-mail (kaua.a.silveira@hotmail.com) ou linkedin ([Kauã Almeida Silveira](https://www.linkedin.com/in/kauaalmeidasilveira/))
