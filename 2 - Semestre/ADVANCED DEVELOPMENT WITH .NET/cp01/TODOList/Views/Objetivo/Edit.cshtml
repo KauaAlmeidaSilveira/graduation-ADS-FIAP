@@ -1,0 +1,31 @@
+@model TODOList.Models.Objetivo
+
+@{
+    ViewData["Title"] = "Editar Objetivo";
+}
+
+<h1 style="font-family: 'Verdana', sans-serif; text-align: center; color: #2c3e50; margin-bottom: 30px;">Editar Objetivo</h1>
+
+<h4 style="font-family: 'Arial', sans-serif; color: #34495e; margin-bottom: 20px;">Detalhes do Objetivo</h4>
+<hr style="border: 1px solid #bdc3c7;" />
+
+<form asp-action="Edit" style="max-width: 600px; margin: 0 auto;">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group" style="margin-bottom: 20px;">
+        <label asp-for="Nome" class="control-label" style="font-family: 'Georgia', serif; color: #2c3e50; font-size: 18px;"></label>
+        <input asp-for="Nome" class="form-control" style="border: 1px solid #bdc3c7; padding: 10px; font-size: 16px; border-radius: 5px;" />
+        <span asp-validation-for="Nome" class="text-danger" style="font-size: 14px; color: #e74c3c;"></span>
+    </div>
+
+    <div class="form-group" style="margin-bottom: 20px;">
+        <label asp-for="Descricao" class="control-label" style="font-family: 'Georgia', serif; color: #2c3e50; font-size: 18px;"></label>
+        <input asp-for="Descricao" class="form-control" style="border: 1px solid #bdc3c7; padding: 10px; font-size: 16px; border-radius: 5px;" />
+        <span asp-validation-for="Descricao" class="text-danger" style="font-size: 14px; color: #e74c3c;"></span>
+    </div>
+
+    <div class="form-group" style="text-align: center; margin-top: 30px;">
+        <input type="submit" value="Salvar" class="btn btn-primary"
+               style="background-color: #2980b9; border-color: #2980b9; padding: 10px 20px; font-size: 16px; border-radius: 5px; color: #fff;" />
+    </div>
+</form>

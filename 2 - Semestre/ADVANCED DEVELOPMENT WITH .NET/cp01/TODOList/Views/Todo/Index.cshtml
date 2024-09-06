@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Lista de TODOs";
+    var TODOs = (List<TODO>)ViewData["AllTodos"];
+}
+
+<h1>Lista de TODOS!!</h1>
+
+<div style="display:flex; flex-direction:row; width: 100vw; flex-wrap:wrap; gap: 5px;">
+    @{
+        if (TODOs != null)
+        {
+            foreach (var todo in TODOs)
+            {
+        <div class="card" style="width: 18rem;">
+            <img src="https://lh3.googleusercontent.com/proxy/562me2SdGu8FRjCAw_ZTl9dI_cAkig7q8ei-QVqN-sdlTdTDYdBqXnyPRjXpSesf4w4r0KslDwFLFSjsYTWwIZrjPX2-h7Uv6yKQ1H4G" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@todo.Tarefa</h5>
+                <p class="card-text">@todo.Descricao</p>
+                @{
+                            if (todo.feto)
+                            {
+                    <p class="card-text">Tarefa feita</p>
+                            }
+                            else
+                            {
+                    <p class="card-text">Tarefa não feita</p>
+                            }
+                }
+            </div>
+        </div>
+            }
+        }
+        else
+        {
+        <p>Não há TODOs disponíveis no momento.</p>
+        }
+    }
+</div>
